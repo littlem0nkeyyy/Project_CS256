@@ -1,0 +1,40 @@
+﻿  menu.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xmemory(2242,18): error C2664: 'bool main::<lambda_1>::operator ()(const Fulltime &) const': cannot convert argument 1 from 'Fulltime *' to 'const Fulltime &'
+  (compiling source file 'menu.cpp')
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xmemory(2242,24):
+  Reason: cannot convert from 'Fulltime *' to 'const Fulltime'
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xmemory(2242,24):
+  'Fulltime::Fulltime': no overloaded function could convert all the argument types
+  	D:\Code\Visual\TeamProject\Fulltime.hpp(38,1):
+  	could be 'Fulltime::Fulltime(Fulltime &&)'
+  		C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xmemory(2242,24):
+  		'Fulltime::Fulltime(Fulltime &&)': cannot convert argument 1 from 'Fulltime *' to 'Fulltime &&'
+  			C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xmemory(2242,24):
+  			Reason: cannot convert from 'Fulltime *' to 'Fulltime'
+  			C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xmemory(2242,24):
+  			Conversion requires a second user-defined-conversion operator or constructor
+  	D:\Code\Visual\TeamProject\Fulltime.hpp(38,1):
+  	or       'Fulltime::Fulltime(const Fulltime &)'
+  		C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xmemory(2242,24):
+  		'Fulltime::Fulltime(const Fulltime &)': cannot convert argument 1 from 'Fulltime *' to 'const Fulltime &'
+  			C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xmemory(2242,24):
+  			Reason: cannot convert from 'Fulltime *' to 'const Fulltime'
+  			C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xmemory(2242,24):
+  			Conversion requires a second user-defined-conversion operator or constructor
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xmemory(2242,24):
+  	while trying to match the argument list '(Fulltime *)'
+  D:\Code\Visual\TeamProject\menu.cpp(108,87):
+  see declaration of 'main::<lambda_1>::operator ()'
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xmemory(2242,18):
+  while trying to match the argument list '(Fulltime *)'
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xmemory(2242,18):
+  the template instantiation context (the oldest one first) is
+  	D:\Code\Visual\TeamProject\menu.cpp(108,18):
+  	see reference to function template instantiation '_FwdIt std::remove_if<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>,main::<lambda_1>>(_FwdIt,const _FwdIt,_Pr)' being compiled
+          with
+          [
+              _FwdIt=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<Fulltime *>>>,
+              _Ty=Fulltime *,
+              _Pr=main::<lambda_1>
+          ]
+  
